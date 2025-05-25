@@ -363,3 +363,22 @@ img {
     height: 30px;
     margin-right: 10px;
 }
+
+.btn-detail {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 10px 18px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-detail:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(63, 81, 181, 0.3);
+    background-color: var(--primary-dark);
+}
