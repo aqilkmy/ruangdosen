@@ -37,6 +37,11 @@ body {
     padding: 0 20px;
 }
 
+.judul {
+    padding: 100px 0;
+    /* background-color: var(--light-bg); */
+}
+
 a {
     text-decoration: none;
     color: inherit;

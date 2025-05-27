@@ -1,3 +1,4 @@
+/* Global Styles */
 :root {
     --primary-color: #3f51b5;
     --primary-dark: #303f9f;
@@ -110,6 +111,7 @@ img {
     margin-top: 2rem;
 }
 
+/* Navigation Bar */
 .navbar {
     background-color: var(--white);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -158,112 +160,45 @@ img {
     color: var(--primary-color);
 }
 
-.courses {
-    padding: 80px 0;
-    background-color: var(--light-bg);
+.auth-buttons .btn {
+    margin-left: 15px;
 }
 
-.courses-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
-.course-card {
-    background-color: var(--white);
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.course-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-.course-image {
-    position: relative;
-    height: 200px;
-    overflow: hidden;
-}
-
-.course-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.course-card:hover .course-image img {
-    transform: scale(1.1);
-}
-
-.course-category {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    background-color: var(--primary-color);
-    color: var(--white);
-    padding: 5px 10px;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    font-weight: 500;
-}
-
-.course-content {
-    padding: 20px;
-}
-
-.course-content h3 {
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-}
-
-.course-instructor {
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-    margin-bottom: 15px;
-}
-
-.course-rating {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.stars {
-    color: var(--secondary-color);
+/* Tambahan untuk gambar */
+.logo-img {
+    height: 40px;
     margin-right: 10px;
 }
 
-.rating-value {
-    font-weight: 600;
-    margin-right: 5px;
+.hero-image img {
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.review-count {
-    color: var(--text-secondary);
-    font-size: 0.9rem;
+.feature-icon img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
 }
 
-.course-price {
-    display: flex;
-    align-items: center;
+.testimonial-author img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-light);
 }
 
-.price {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--primary-dark);
-}
-
-.original-price {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    text-decoration: line-through;
-    margin-left: 10px;
+/* Untuk logo footer */
+.footer-about .logo-img {
+    height: 30px;
+    margin-right: 10px;
 }
 
 /* Footer */
@@ -349,39 +284,112 @@ img {
     font-size: 0.9rem;
 }
 
-.logo-img {
-    height: 40px;
-    margin-right: 10px;
+/* Page Header */
+.page-header {
+    padding: 100px 0 60px;
+    background-color: var(--primary-light);
+    margin-top: 60px;
+    text-align: center;
 }
 
-.hero-image img {
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+.page-header h1 {
+    font-size: 2.5rem;
+    color: var(--primary-dark);
+    margin-bottom: 15px;
 }
 
-.footer-about .logo-img {
-    height: 30px;
-    margin-right: 10px;
+.page-header p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 700px;
+    margin: 0 auto;
 }
 
-.btn-detail {
+
+/* Article Page Styles */
+
+.articles-list .container{
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.article-card{
+    padding-top: 20px;
+}
+
+.article-content {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.article-title {
+    font-size: 2rem;
+    color: var(--primary-dark);
+    margin-bottom: 20px;
+}
+
+.article-meta {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+}
+
+.article-body p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+}
+
+.article-body h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: var(--primary-color);
+}
+
+.article-body img {
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 100%;
+}
+
+.article-tags {
+    margin-top: 30px;
+}
+
+.article-tags span {
     display: inline-block;
-    margin-top: 10px;
-    background-color: var(--primary-color);
-    color: var(--white);
-    border: none;
-    padding: 10px 18px;
-    border-radius: 4px;
-    font-weight: 500;
-    font-size: 0.95rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 0.85rem;
 }
 
-.btn-detail:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(63, 81, 181, 0.3);
-    background-color: var(--primary-dark);
+/* Responsive */
+@media (max-width: 768px) {
+    .article-content {
+        margin: 60px 20px;
+        padding: 15px;
+    }
+
+    .article-title {
+        font-size: 1.6rem;
+    }
+
+    .article-body h2 {
+        font-size: 1.3rem;
+    }
 }
+
+
+
+/* Tombol Scroll to Top */
 
 
 

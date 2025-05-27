@@ -28,4 +28,15 @@ document.addEventListener('DOMContentLoaded', function() {
         showTestimonial(currentIndex);
     });
     showTestimonial(0);
+
+        // Scroll to Top
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+    window.addEventListener('scroll', () => {
+        scrollTopBtn.style.display = window.scrollY > 200 ? 'block' : 'none';
+    });
+
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 });
